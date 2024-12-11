@@ -1,0 +1,61 @@
+body{
+  background-image: url(img/cork.png);
+  height: 100vh;
+  position: relative;
+}
+header{
+  height: 100px;
+  width: 100vw;
+  background-image: url(img/wall.png);
+}
+
+.container{
+  padding-top: 50px;
+}
+
+
+.overlay{
+  position: absolute;
+  height: 100vw;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.664);
+  z-index: 20;
+}
+
+.img-overlay{
+  aspect-ratio: 1;
+  justify-content: center;
+}
+
+
+
+.user-card{
+  position: relative;
+  padding: 17px;
+  max-height: 505px;
+  background-color: white;
+
+  box-shadow: 10px 10px 5px rgba(49, 54, 68, 0.308); 
+  aspect-ratio: 415 / 510;
+  transition: transform .3s;
+}
+
+.user-card img:first-child{
+  position:absolute;
+  top: -8px;
+  right: calc((100% - 36px) / 2);
+}
+
+.image{
+  aspect-ratio: 1;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.user-card:hover{
+  cursor: pointer;
+  rotate: 10deg;
+  transform: scale(1.08);
+  box-shadow: 20px 20px 5px rgba(49, 54, 68, 0.308);
+  z-index: 15;
+}
